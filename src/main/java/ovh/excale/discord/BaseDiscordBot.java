@@ -85,9 +85,7 @@ public class BaseDiscordBot {
 
 		try {
 
-			jda = JDABuilder.create(TOKEN,
-					GatewayIntent.GUILD_MESSAGES,
-					GatewayIntent.GUILD_MESSAGE_REACTIONS)
+			jda = JDABuilder.create(TOKEN, GatewayIntent.GUILD_MESSAGES)
 					.disableCache(CacheFlag.ACTIVITY,
 							CacheFlag.VOICE_STATE,
 							CacheFlag.EMOTE,
